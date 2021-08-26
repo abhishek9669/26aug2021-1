@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .box{
+                width: 123px;
+                height: 128px;
+                
+                background-image: url("./birdspritesheet.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                animation-name: abz;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(4);
+    
+            }
+            @keyframes abz{
+                0%{
+                    background-position: 0px 0px;
+
+
+                }
+                100%{
+                    background-position: -517px 0px;
+
+
+                }
+            }
+            .a1{
+                animation-name: xyz;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                position: relative;
+                animation-play-state: running;
+
+
+            }
+            @keyframes xyz{
+            0%{
+                left:0%;
+
+
+            }
+            100%{
+                left: 100%;
+            }
+        }
+        .box2{
+            width: 155px;
+            height: 108px;
+            background-image: url(./abhi.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation-name: wnv;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(4);
+            background-position: 0px 0px;
+            
+        }
+        @keyframes wnv{
+            0%{
+                background-position: 0px 0px;
+
+            }
+            100%{
+                background-position: -521px 0px;
+
+            }
+        }
+        body{
+            background-color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="a1">
+            <div class="box"></div>
+            <div class="box2"></div>
+        </div>
+        
+        
+    </body>
+</html>
